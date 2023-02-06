@@ -21,11 +21,9 @@ async function fetchCharacters () {
   const characterArr = data.results;
   console.log(characterArr);
   characterArr.forEach((element) => {
-    createCharacterCard(element.name, element.image, element.status, element.type, element.episodes);
+    cardContainer.append(createCharacterCard(element.name, element.image, element.status, element.type, element.episode.length));
   })
   
 }
 
 fetchCharacters();
-
-/* characterName, imgSource, characterStatus, characterType, characterOccurences */

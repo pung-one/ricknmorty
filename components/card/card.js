@@ -20,4 +20,5 @@ export function createCharacterCard(characterName, imgSource, characterStatus, c
             <dd class="card__info-description">${characterOccurences}</dd>
         </dl>
     </div>`;
+    return card;
   }
