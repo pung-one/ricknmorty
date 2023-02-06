@@ -33,9 +33,9 @@ async function fetchCharacters (page) {
 fetchCharacters(page);
 
 nextButton.addEventListener("click", async () => {
-  if (page <= maxPage) {
+  if (page < maxPage) {
     page++;
-    console.log(page);
+    console.log(maxPage);
     fetchCharacters(page);
     pagination.textContent = `${page} / ${maxPage}`;
   }
