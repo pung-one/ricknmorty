@@ -20,6 +20,5 @@ export function createCharacterCard(characterName, imgSource, characterStatus, c
             <dd class="card__info-description">${characterOccurences}</dd>
         </dl>
     </div>`;
-    cardContainer.append(card)
-    console.log(card)
+    return card;
   }
